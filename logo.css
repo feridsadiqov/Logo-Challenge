@@ -1,0 +1,48 @@
+#logo{ 
+    width: 10px;
+    height: 10px;
+    border: 5px solid rgb(221, 218, 218);
+    border-radius: 50%;
+    position: relative;
+}
+#logo::after{ 
+    content: ' ';
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: 5px solid rgb(240, 236, 236);
+    border-radius: 50%;
+    position: absolute;
+    transform: rotateZ(130deg);
+    left: -50px;
+    top: -16px;
+}
+#logo::before{
+    
+    content: ' ';
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: 5px solid rgb(226, 223, 223);
+    border-radius: 50%;
+    position: absolute;
+    transform: rotateZ(-130deg);
+    left: -50px;
+    top: -16px;
+}
+
+
+#wrapper{ 
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 4%;
+    
+}
+h1{
+    font-size: 50px;
+    color: white;
+}
+main{
+    background-color: #02203c;
+}
